@@ -160,7 +160,9 @@ The server will start running at `http://localhost:3000`.
   {
     "userId": "<user_id>",
     "drillId": "<drill_id>",
-    "count": 30
+    "drill_name":"<drill_name>",
+    "count": <no of drills done by user>,
+    "drill_total":<max no. of drills>
   }
   ```
 - Response:
