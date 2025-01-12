@@ -79,13 +79,12 @@ Drill.insertMany([
 #### Dummy Data for UserDrill Collection
 
 ```javascript
-const UserDrill = mongoose.model('user_drill', new mongoose.Schema({ userId: String, drillId: String, count: Number }));
+const UserDrill = mongoose.model('user_drill', new mongoose.Schema({userId: String,
+    drillId: String,
+    drill_name: String,
+    count: Number,
+    drill_total: Number }));
 
-UserDrill.insertMany([
-  { userId: '63e4a1b2f06c3b6b8e2a1234', drillId: '63e4a1b2f06c3b6b8e2b1234', count: 30 },
-  { userId: '63e4a1b2f06c3b6b8e2a5678', drillId: '63e4a1b2f06c3b6b8e2b9101', count: 25 },
-  { userId: '63e4a1b2f06c3b6b8e2a9101', drillId: '63e4a1b2f06c3b6b8e2b5678', count: 45 }
-]);
 ```
 
 ### 5. Start the Server
